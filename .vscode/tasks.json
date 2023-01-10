@@ -5,6 +5,7 @@
       "label": "C/C++: cl.exe build active file",
       "command": "cl.exe",
       "args": [
+        "/std:c++20",
         "/Zi",
         "/EHsc",
         "/nologo",
@@ -26,6 +27,7 @@
       "label": "C/C++: cpp.exe build active file",
       "command": "C:\\MinGW\\bin\\cpp.exe",
       "args": [
+        "-std=c++20",
         "-fdiagnostics-color=always",
         "-g",
         "${file}",
@@ -44,6 +46,7 @@
       "label": "C/C++: g++.exe build active file",
       "command": "C:\\MinGW\\bin\\g++.exe",
       "args": [
+        "--std=c++20",
         "-fdiagnostics-color=always",
         "-g",
         "${file}",
