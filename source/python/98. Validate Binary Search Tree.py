@@ -1,3 +1,4 @@
+import math
 from typing import Self
 
 
@@ -17,7 +18,7 @@ class Solution:
                 return False
             return dfs(node.left, lower, node.val) and dfs(node.right, node.val, upper)
 
-        return dfs(root, float('-inf'), float('inf'))
+        return dfs(root, -math.inf, math.inf)
 
 
 def test():
